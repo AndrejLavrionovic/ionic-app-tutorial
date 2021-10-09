@@ -10,12 +10,12 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <h1>My app</h1>
       </header>
       <main>
-        <IonButton onClick={handleClick}>
+        <IonButton color="secondary" onClick={handleClick}>
           <IonIcon icon={playIcon} slot="start" />
           Click Me
         </IonButton>
