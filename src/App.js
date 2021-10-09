@@ -1,4 +1,13 @@
-import { IonApp, IonButton, IonContent, IonHeader, IonIcon, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import {
+  IonApp,
+  IonButton,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonTitle,
+  IonToast,
+  IonToolbar
+} from '@ionic/react';
 import { play as playIcon } from 'ionicons/icons';
 import React, { useState } from 'react';
 
