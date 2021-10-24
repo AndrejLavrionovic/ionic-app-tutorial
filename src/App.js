@@ -1,36 +1,33 @@
 import {
   IonApp,
-  IonButton,
   IonContent,
   IonHeader,
-  IonIcon,
+  IonInput,
+  IonItem,
+  IonLabel,
   IonTitle,
-  IonToast,
   IonToolbar
 } from '@ionic/react';
-import { play as playIcon } from 'ionicons/icons';
 import React, { useState } from 'react';
 
 function App() {
-  const [showToast, setShowToast] = useState(false);
-  const handleClick = () => {
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 1500);
-  };
+  const [name, setName] = useState('');
 
   return (
     <IonApp>
       <IonHeader className="App-header">
         <IonToolbar>
-          <IonTitle>My app</IonTitle>
+          <IonTitle>Biorhythms</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonButton color="secondary" onClick={handleClick}>
-          <IonIcon icon={playIcon} slot="start" />
-          Click Me
-        </IonButton>
-        <IonToast isOpen={showToast} message="Hello World!" />
+        <IonItem>
+          <IonLabel>Name:</IonLabel>
+          <IonInput value={name}
+            onIonChange={(event) => setName(event.detail.value)}
+          />
+        </IonItem>
+        <p>Name: {name}</p>
       </IonContent>
     </IonApp>
   );
