@@ -25,7 +25,7 @@ function App() {
       <IonContent className="ion-padding">
         <IonItem>
           <IonLabel position="stacked">Date of Birth:</IonLabel>
-          <IonDatetime displayFormat="MMM D, YYYY"
+          <IonDatetime displayFormat="D MMM YYYY"
             onIonChange={(event) => setBirthDate(event.detail.value)}
           />
         </IonItem>
