@@ -23,13 +23,13 @@ function App() {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+      {birthDate && <BiorithmCard birthDate={birthDate} targetDate={targetDate} />}
         <IonItem>
           <IonLabel position="stacked">Date of Birth:</IonLabel>
           <IonDatetime displayFormat="D MMM YYYY"
             onIonChange={(event) => setBirthDate(event.detail.value)}
           />
         </IonItem>
-        <BiorithmCard targetDate={targetDate} />
       </IonContent>
     </IonApp>
   );
