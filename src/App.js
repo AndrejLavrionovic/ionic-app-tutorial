@@ -13,7 +13,7 @@ import BiorithmCard from './components/BiorhythmCard';
 
 function App() {
   const [birthDate, setBirthDate] = useState('');
-  const targetDate = new Date().toISOString();
+  const [targetDate, setTargetDate] = useState(new Date().toISOString());
 
   return (
     <IonApp>
@@ -25,9 +25,17 @@ function App() {
       <IonContent className="ion-padding">
       {birthDate && <BiorithmCard birthDate={birthDate} targetDate={targetDate} />}
         <IonItem>
-          <IonLabel position="stacked">Date of Birth:</IonLabel>
+          <IonLabel position="fixed">Date of Birth:</IonLabel>
           <IonDatetime displayFormat="D MMM YYYY"
+            value={birthDate}
             onIonChange={(event) => setBirthDate(event.detail.value)}
+          />
+        </IonItem>
+        <IonItem>
+          <IonLabel position="fixed">Target Date:</IonLabel>
+          <IonDatetime displayFormat="D MMM YYYY"
+            value={targetDate}
+            onIonChange={(event) => setTargetDate(event.detail.value)}
           />
         </IonItem>
       </IonContent>
