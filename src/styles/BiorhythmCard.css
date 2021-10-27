@@ -3,13 +3,13 @@
 }
 
 .biorhythm-card .emotional {
-  color: red;
+  color: var(--app-emotional-color);
 }
 
 .biorhythm-card .physical {
-  color: green;
+  color: var(--app-physical-color);
 }
 
 .biorhythm-card .intellectual {
-  color: blue;
+  color: var(--app-intellectual-color);
 }

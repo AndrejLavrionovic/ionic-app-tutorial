@@ -19,6 +19,9 @@ import '@ionic/react/css/text-alignment.css';
 // import '@ionic/react/css/flex-utils.css';
 // import '@ionic/react/css/display.css';
 
+/* Custom global styles */
+import './styles/index.css'
+
 import './themes/variables.css';
 
 ReactDOM.render(
