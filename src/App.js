@@ -19,7 +19,7 @@ function App() {
   return (
     <IonApp>
       <IonHeader className="App-header">
-        <IonToolbar>
+        <IonToolbar color="primary">
           <IonTitle>Biorhythms</IonTitle>
         </IonToolbar>
       </IonHeader>
