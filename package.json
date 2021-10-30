@@ -3,13 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "3.2.5",
-    "@capacitor/app": "^1.0.5",
-    "@capacitor/core": "3.2.5",
-    "@capacitor/haptics": "^1.1.2",
-    "@capacitor/keyboard": "^1.1.2",
-    "@capacitor/splash-screen": "^1.1.5",
-    "@capacitor/status-bar": "^1.0.5",
+    "@capacitor/android": "2.4.7",
+    "@capacitor/core": "2.4.7",
     "@ionic/react": "^5.8.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -47,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.2.5"
+    "@capacitor/cli": "2.4.7"
   }
 }
